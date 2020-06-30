@@ -72,12 +72,12 @@ void isolate1(String arg) async {
 
   // Listen to scan results
   flutterBlue.scanResults.listen((results) async {
-    print("hani d5alt");
+
     if(results.isEmpty){
       print("Killing Isolate 2");
       isolate.pause();
     }else{
-      print("hay hay 3la #####");
+
       isolate.resume();
       // do something with scan results
       for (ScanResult r in results) {
